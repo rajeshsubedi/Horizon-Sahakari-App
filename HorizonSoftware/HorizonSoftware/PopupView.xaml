@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HorizonSoftware.PopupView"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+    <ListView x:Name="myListView"
+            ItemTapped="MyListView_ItemTapped"
+            CachingStrategy="RecycleElement">
+
+        <!--Built in Cells-->
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding ANumber}" TextColor="Black"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+        <!--Custom View Cells-->
+        <!--
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout>
+            <Label Text="{Binding Text}" 
+                   Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="{Binding Detail}" 
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+    -->
+    </ListView>
+
+</pages:PopupPage>

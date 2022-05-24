@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:horizonsoftware="clr-namespace:HorizonSoftware"
+             x:Class="HorizonSoftware.LoanPage"
+             Title="Loan Account"
+             BackgroundColor="LightBlue">
+    <ScrollView>
+    <!--<ContentPage.Content>-->
+    
+        <StackLayout>
+            <!--<Label Text="Deposite Account !" FontSize="Title" TextColor="#171717" HorizontalOptions="Center" VerticalOptions="Start" Padding="10,10,0,0" TextDecorations="Underline"/>-->
+
+            <Label Text="Account Number" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="25,10,0,-5"/>
+            <!--<StackLayout Padding="25,0,30,0">-->   
+            <StackLayout Orientation="Vertical" Margin="0,5,0,-20">
+                <SearchBar Placeholder="Search Account Number" x:Name="AccountNumber"
+                SearchButtonPressed="SearchBar_SearchButtonPressed" Text="{Binding AccountNumber}" TextColor="Gray"/>
+                
+                <!--<ListView x:Name="SuggestedListView"/>-->
+                <!--<Entry x:Name="AccountNumber" Placeholder="account number" TextColor="#112B47" PlaceholderColor="Gray"></Entry>
+            </StackLayout>-->
+                
+                    </StackLayout>
+
+            
+            <Label Text="A/C Holder's Name" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="25,25,0,-5"/>
+           
+            <StackLayout Padding="20,0,0,0">
+               
+                <Entry x:Name="AccountHolder" Placeholder="account holder name" IsReadOnly="True" Margin="0,0,0,-5" TextColor="#112B47" Text="{Binding AccountHolder}" PlaceholderColor="Gray"></Entry>
+              
+                    </StackLayout>
+            <!--principle amount and interest rate-->
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="160"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                     
+                <StackLayout  Grid.Row="1" Grid.Column="1">
+                    <Label Text="Principle Amount" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="0,0,0,0"/>
+                    <Entry x:Name="PrincipleAmount" Placeholder="amount" IsReadOnly="True" Text="{Binding PrincipleAmount}" TextColor="#112B47" Margin="0,-5,0,0" PlaceholderColor="Gray"></Entry>
+                </StackLayout>
+
+                <StackLayout  Grid.Row="1" Grid.Column="2">
+                    <Label Text="Interest Amount" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="30,0,0,0"/>
+                    <Entry x:Name="InterestAmount" Placeholder="amount" IsReadOnly="True" Text="{Binding InterestAmount}" TextColor="#112B47" Margin="30,-5,0,0" PlaceholderColor="Gray"></Entry>
+                </StackLayout>
+            </Grid>
+
+
+                                 <!--Fine principle and fine amouunt-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="160"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout  Grid.Row="1" Grid.Column="1">
+                    <Label Text="Fine Principle(P)" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="0,0,0,0"/>
+                    <Entry x:Name="FinePrinciple" Placeholder="fine amount" IsReadOnly="True" Text="{Binding FinePrinciple}" TextColor="#112B47" Margin="0,-5,0,0" PlaceholderColor="Gray"></Entry>
+                </StackLayout>
+
+                <StackLayout  Grid.Row="1" Grid.Column="2">
+                    <Label Text="Fine Interest(I)" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="40,0,0,0"/>
+                    <Entry x:Name="FineInterest" Placeholder="fine interest" IsReadOnly="True" Text="{Binding FineInterest}" TextColor="#112B47" Margin="40,-5,0,0" PlaceholderColor="Gray"></Entry>
+                </StackLayout>
+            </Grid>
+
+                    <!--for due and recieved amount-->
+
+            <Label Text="Total Due" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="25,0,0,-5"/>
+            <StackLayout Padding="25,0,30,0">
+                <Entry x:Name="TotalDue" Placeholder="remaining due" IsReadOnly="True" Text="{Binding TotalDue}" TextColor="#112B47" Margin="0,-5,0,0" PlaceholderColor="Gray"></Entry>
+            </StackLayout>
+
+            <Label Text="Recieved Amount" FontSize="20"  TextColor="#171717" HorizontalOptions="Start" VerticalOptions="Start" Padding="25,10,0,-5"/>
+            <StackLayout Padding="25,0,30,0">
+                <Entry x:Name="RecievedAmount" Placeholder="amount recieved"  TextColor="#112B47" Margin="0,-5,0,-20" PlaceholderColor="Gray"></Entry>
+            </StackLayout>
+            
+                                   <!--for save and cancle button-->
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <Button 
+                   Margin="15,0,20,40"
+                     Grid.Row="1"
+                        Grid.Column="1"
+                       HeightRequest="70"
+                        WidthRequest="60"
+                      Text="Save"
+                    FontSize="20"
+              TextColor="White"
+              BackgroundColor="#112B47"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Button_Clicked"       
+              ></Button>
+
+                <Button 
+                    Margin="15,0,20,40"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                  HeightRequest="60"
+                        WidthRequest="40"
+                    FontSize="20"
+              Text="Close"
+              TextColor="White"
+              BackgroundColor="#112B47"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Button_Clicked_1"        
+              ></Button>
+            </Grid>
+
+        </StackLayout>
+    <!--</ContentPage.Content>-->
+    </ScrollView>
+   
+</ContentPage>
