@@ -35,7 +35,6 @@ F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\Horizon
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.dll
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\ref\HorizonSoftware.dll
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.pdb
-F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.AssemblyReference.cache
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.GeneratedMSBuildEditorConfig.editorconfig
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ActivationPage.xaml.g.cs
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\App.xaml.g.cs
@@ -52,7 +51,6 @@ F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\Horizon
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ListViewPage2.xaml.g.cs
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoanPage.xaml.g.cs
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
-F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\PopupView.xaml.g.cs
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\SignupPage.xaml.g.cs
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayBoth.xaml.g.cs
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayLoan.xaml.g.cs
@@ -64,3 +62,4 @@ F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\Horizon
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.dll
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ref\HorizonSoftware.dll
 F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.pdb
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.AssemblyReference.cache

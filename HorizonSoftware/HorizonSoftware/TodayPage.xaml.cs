@@ -34,24 +34,15 @@ namespace HorizonSoftware
         {
             InitializeComponent();
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.96";
+            string srvrname = "192.168.1.74";
             string srvrusername = "Rajesh";
-            string srvrpassword = "12345";
+            string srvrpassword = "samsung@M51";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
             sqlConnection = new SqlConnection(sqlconn);
 
             List<mysqlList> mysqlLists = new List<mysqlList>();
             sqlConnection.Open();
             string queryString = "select AccountNumber,AccountHolder,Amount from dbo.DepositeTable Union all select AcNo='',AcName='Total',Amount=sum(Amount) from DepositeTable ";
-            //string query = "SELECT SUM(Amount) as SUM from dbo.DepositeTable";
-            //SqlCommand comm = new SqlCommand(query, sqlConnection);
-            //SqlDataReader read = comm.ExecuteReader();
-
-            //string total = "0";
-            //while (read.Read())
-            //    total = read["SUM"].ToString();
-            //read.Close();
-            //string total = "120000";
             SqlCommand command = new SqlCommand(queryString, sqlConnection);
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
